@@ -10,6 +10,8 @@
 ./cub3D map/success/simple.cub
 ```
 
-# 動いた時の画像
+# 動いた時の動画
 
-<img width="1470" alt="スクリーンショット 2024-05-29 20 43 38" src="https://github.com/Kazuki-Asaka/submitted_cub3d/assets/116556794/7db40a87-c0b4-44e6-9817-4726ff447e07">
+https://github.com/Kazuki-Asaka/submitted_cub3d/assets/116556794/a93ef34f-299b-473c-8a1f-1b7332d00cf3
+
+
