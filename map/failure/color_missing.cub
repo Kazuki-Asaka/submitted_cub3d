@@ -1,0 +1,13 @@
+NO ./texture/blue_tile.xpm
+SO ./texture/red_white.xpm
+WE ./texture/SnowbrickL.xpm
+EA ./texture/Stone1L.xpm
+
+F 220,100,0
+C ,,236
+
+1111111111
+1000110001
+1000000001
+1N00110001
+1111111111
