@@ -22,6 +22,7 @@ SRCS	=	change_dir.c			\
 INCLUDE_DIR = ./include
 SRCDIR = ./srcs/
 OBJDIR = ./obj/
+MLX_DIR = ./mlx/
 
 LIBFT_DIR = ./libft/
 LIBFT_A = $(LIBFT_DIR)libft.a
@@ -30,15 +31,15 @@ OBJS = $(SRCS:%.c=$(OBJDIR)%.o)
 
 CC = cc
 
-CFLAGS = -Wall -Wextra -Werror -I include
+CFLAGS = -Wall -Wextra -Werror -I include -I mlx
 
 MLX_FLAG = -lmlx -framework OpenGL -framework AppKit
 
 all: $(LIBFT_A) $(OBJDIR) $(NAME)
 
 $(NAME): $(LIBFT_A) $(OBJDIR) $(OBJS)
-	# make -C $(MLX_DIR)
-	$(CC) $(CFLAGS) $(MLX_FLAG) -o $(NAME) $(LIBFT_A) $(OBJS)
+	make -C $(MLX_DIR)
+	$(CC) $(CFLAGS) $(MLX_FLAG) -o $(NAME) $(LIBFT_A) $(OBJS) ./mlx/libmlx.a -L./mlx/
 $(OBJDIR):
 	mkdir -p $(OBJDIR)
 
@@ -50,7 +51,7 @@ $(LIBFT_A):
 
 clean:
 	make fclean -C $(LIBFT_DIR)
-	rm -rf $(OBJDIR)
+	rm -rf $(OBJDIR) 
 
 fclean: clean
 	rm -f $(NAME)

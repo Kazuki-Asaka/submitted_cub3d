@@ -36,12 +36,12 @@ double	set_delta_y(double angle)
 
 t_status	set_init_data_x_axis(t_data *data, double angle)
 {
-	int			dx;
+	// int			dx;
 	int			dy;
 	t_status	data_init;
 	double		tmp;
 
-	dx = (int)data->pos_x;
+	// dx = (int)data->pos_x;
 	dy = (int)data->pos_y;
 	if (((double)0 < angle && angle < (double)90)
 		|| ((double)90 < angle && angle < (double)180))
@@ -61,12 +61,12 @@ t_status	set_init_data_x_axis(t_data *data, double angle)
 t_status	set_init_data_y_axis(t_data *data, double angle)
 {
 	int			dx;
-	int			dy;
+	// int			dy;
 	t_status	data_init;
 	double		tmp;
 
 	dx = (int)data->pos_x;
-	dy = (int)data->pos_y;
+	// dy = (int)data->pos_y;
 	if (((double)0 < angle && angle < (double)90)
 		|| ((double)270 < angle && angle < (double)360))
 		dx++;
